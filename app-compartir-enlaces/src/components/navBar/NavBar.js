@@ -2,7 +2,7 @@
 import "./NavBar.css"
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink, faUser, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faUser} from '@fortawesome/free-solid-svg-icons'
 
 
 /***** LOGICA *****/
@@ -12,13 +12,13 @@ const NavBar = () => {
 return (
     <nav>
         <ul>
-            <li><span className='spanIcono spanIcono1'><FontAwesomeIcon icon={faLink}/></span><span className='spanPalabra'>Devlinks</span></li>
+            <li><span className='spanIcono spanIcono1'><img className="imgLogo" src="img/logoEnlace.png"></img></span><span className='spanPalabra spanPalabra1'>Devlinks</span></li>
 
-            <li><Link to='/links'><span className='spanIcono'><FontAwesomeIcon icon={faLink} /></span><span className='spanPalabra'>Links</span></Link></li>
+            <li><Link className="li li2" to='/links'><span className='spanIcono spanIcono2'><FontAwesomeIcon icon={faLink} /></span><span className='spanPalabra spanPalabra2'>Links</span></Link></li>
 
-            <li><Link to='/profile'><span className='spanIcono'><FontAwesomeIcon icon={faUser} /></span><span className='spanPalabra'>Profile Details</span></Link></li>
+            <li><Link className="li" to='/profile'><span className='spanIcono spanIcono3'><FontAwesomeIcon icon={faUser} /></span><span className='spanPalabra spanPalabra3'>Profile Details</span></Link></li>
 
-            <li><Link to='/preview'><span className='spanIcono'><FontAwesomeIcon icon={faEye} /></span><span className='spanPalabra'>Preview</span></Link></li>
+            <li><Link className="li li4" to='/preview'><span className='spanIcono spanIcono4'><img className="imgLogo2" src="img/ojo.png"></img></span><span className='spanPalabra spanPalabra4'>Preview</span></Link></li>
         </ul>
     </nav>
 )

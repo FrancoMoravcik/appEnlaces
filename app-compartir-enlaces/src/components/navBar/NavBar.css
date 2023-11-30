@@ -1,17 +1,50 @@
+nav{
+    background-color: #ffffff;
+    width: 95%;
+    border-radius: 8px;
+    margin: auto;
+    padding: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: sticky;
+    top: 8px;
+}
+
 .spanIcono {
-color: rgb(122, 23, 122);
+color: #5A4D9B;
 }
 .spanIcono1{
-    padding: 5px;
-    background-color: rgb(122, 23, 122);
+    padding: 1px 7px;
+    border-radius: 7px;
+    background-color: #5A4D9B;
+    color: white;
+}
+.spanIcono3{
+    color: #6D6D6C;
+}
+
+.li2{
+    background-color: #5a4d9b1c;
+    padding: 5px 11px;
+    border-radius: 7px;
+}
+.li4{
+    border: 1px solid #5A4D9B;
+    padding: 5px 11px;
+    border-radius: 10px;
+}
+
+
+
+.imgLogo{
+    width: 24px;
+}
+.imgLogo2{
+    width: 30px;
 }
 
 .spanPalabra {
     display: none;
-}
-
-nav {
-    width: 100%;
 }
 
 ul {
@@ -25,3 +58,72 @@ ul {
 ul li{
     font-size: 24px;
 }
+
+ul .li{
+    text-decoration: none;
+}
+
+@media screen and (min-width:760px) {
+        .spanPalabra {
+            display: flex;
+            color: #5A4D9B;
+            font-size: 18px;
+            margin: 0px 10px;
+        }
+        .spanPalabra1{
+            color:black;
+            font-weight: 600;
+        }
+        .spanPalabra2{
+            color:#5A4D9B;
+            font-weight: 500;
+        }
+        .spanPalabra3{
+            color:#6D6D6C;
+            font-weight: 400;
+        }
+        .spanPalabra4{
+            color:#5A4D9B;
+            font-weight: 600;
+        }
+        .spanIcono4{
+            display: none;
+        }
+        
+        ul li .li{
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul li{
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+               align-items: center;
+        }
+}
+
+
+@media screen and (min-width:1010px) {
+ .li2{
+    margin-left: 180px;
+ }
+ .li4{
+    margin-left: 180px;
+ }
+ .spanPalabra1{
+    color:black;
+    font-size: 25px;
+    font-weight: 600;
+}
+}
+
+@media screen and (min-width:1220px) {
+    .li2{
+       margin-left: 280px;
+    }
+    .li4{
+       margin-left: 280px;
+    }
+   }

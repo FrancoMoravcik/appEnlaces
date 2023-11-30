@@ -1,11 +1,12 @@
 /***** IMPORTACIONES *****/
+import Celular from "../celular/Celular"
 import "./Profile.css"
 
 /***** LOGICA *****/
 
 const Profile = ()  => {
 return (
-    <p>Profile</p>
+    <Celular></Celular>
 )
 }
 
