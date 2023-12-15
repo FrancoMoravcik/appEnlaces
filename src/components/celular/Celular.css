@@ -1,0 +1,152 @@
+
+.main-celular{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+   min-width: 400px;
+   max-width: 640px;    
+}
+
+.img-celular-main{
+    height: 600px;
+    position: relative;   
+}
+
+.seccion-contenedor-celular{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 520px;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.div-1-celular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-img-perfil{
+    width: 40%;
+    height: 120px;
+    border: 3px solid #5A4D9B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.113);
+}
+
+.img-perfil{
+    width: 300px;
+}
+
+.h3-div-1{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.113);
+   
+    margin: 25px 10px 0px 10px;
+}
+
+.h5-div-1{
+    padding-top: 7px;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.113) !important;
+}
+
+.h3-div-1-data {
+    background-color: transparent;
+     font-weight: 600;
+ }
+
+.h5-div-1-data{
+   background-color: transparent;  
+   font-weight: 400;
+   margin-top: -5px;
+   font-size: 15px;
+}
+
+.div-2-celular{
+    width: 100%;
+    height: auto;
+}
+
+.img-marca {
+        width: 30px;
+        margin-left: 5px;
+}
+
+.a-div-2-celular{
+    text-decoration: none;
+    color: white;
+    margin-right: 80px;
+    width: 80% !important;
+    height: 40px;
+    margin: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.113);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-discord{
+    background-color: #4E5FA9;
+}
+.a-facebook{
+    background-color: #3B5998;
+}
+.a-github{
+    background-color: #000000;
+}
+.a-instagram{
+    background: linear-gradient(to right, #FFD155, #EA5448, #BF4492);;
+}
+.a-linkedin{
+    background-color: #007AB9;
+}
+.a-pinterest{
+    background-color: #CB2027;
+}
+.a-snapchat{
+    background-color: #FFFC01;
+}
+.a-telegram{
+    background-color: #039BE5;
+}
+.a-tiktok{
+    background-color: #000000;
+}
+.a-twitch{
+    background-color: #6441A5;
+}
+.a-twitter{
+    background-color: #03A9F4;
+}
+.a-youtube{
+    background-color: #F61C0D;
+}
+
+
+.img-flecha{
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 50px;
+}

@@ -1,0 +1,43 @@
+/***** IMPORTACIONES *****/
+import "./Celular.css"
+import { useLinkContext } from "../../context/LinkProvider";
+/***** LOGICA *****/
+
+const Celular = () => {
+
+    const { linkSections, profileDetails } = useLinkContext();
+
+    return (
+        <main className="main-celular">
+            <img className="img-celular-main" src="img/celular.png" alt="celular"></img>
+            <section className="seccion-contenedor-celular">
+                <div className="div-1-celular">
+                    
+                 
+                        <div className="div-img-perfil">
+                            <img className="img-perfil" alt="" />
+                        </div>
+                            <h3 className={profileDetails.firstName === '' ? 'h3-div-1' : 'h3-div-1-data'}>{`${profileDetails.firstName} ${profileDetails.lastName}`}</h3>
+                            <h5 className={profileDetails.email === '' ? 'h5-div-1' : 'h5-div-1-data'}>{profileDetails.email}</h5>
+                      
+                   
+                    
+                </div>
+
+                <div className="div-2-celular">
+
+                    {linkSections && linkSections.map((linkSection) => (
+                        <a key={linkSection.id} target="_blank" className={`a-div-2-celular a-${linkSection.selectedPlatform}`} href={linkSection.link}>
+                            <img className={`img-marca img-${linkSection.selectedPlatform}`} src={`img/${linkSection.selectedPlatform}B.png`} alt=""></img>{linkSection.selectedPlatform}
+                            <img className={`img-flecha img-flecha-${linkSection.selectedPlatform}`} src="img/flecha-correcta.png" alt="url"></img>
+                        </a>
+                    ))}
+                </div>
+            </section>
+        </main>
+    )
+}
+
+/***** EXPORTACIONES *****/
+
+export default Celular
