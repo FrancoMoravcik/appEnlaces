@@ -17,11 +17,18 @@ export const LinkProvider = ({ children }) => {
     firstName: '',
     lastName: '',
     email: ''
-    // ... otros detalles del perfil
   });
 
+
+  const updateProfileImage = (newProfileImage) => {
+    setProfileImage(newProfileImage);
+  };
+
+  const [profileImage, setProfileImage] = useState(null);
+
+
   return (
-    <LinkContext.Provider value={{ linkSections, updateLinkSections, profileDetails, updateProfileDetails  }}>
+    <LinkContext.Provider value={{ linkSections, updateLinkSections, profileDetails, updateProfileDetails, profileImage, updateProfileImage }}>
       {children}
     </LinkContext.Provider>
   );

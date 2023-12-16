@@ -26,6 +26,11 @@
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
+    text-align: center;
+}
+
+.link-btn-preview{
+       text-decoration: none;
 }
 
 .btn-preview-2 {

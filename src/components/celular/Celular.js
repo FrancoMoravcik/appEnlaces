@@ -5,7 +5,7 @@ import { useLinkContext } from "../../context/LinkProvider";
 
 const Celular = () => {
 
-    const { linkSections, profileDetails } = useLinkContext();
+    const { linkSections, profileDetails, profileImage } = useLinkContext();
 
     return (
         <main className="main-celular">
@@ -14,8 +14,8 @@ const Celular = () => {
                 <div className="div-1-celular">
                     
                  
-                        <div className="div-img-perfil">
-                            <img className="img-perfil" alt="" />
+                        <div className={profileImage === null ? 'div-img-perfil' : 'div-img-perfil-data'}>
+                            <img className='img-perfil' src={profileImage ? URL.createObjectURL(profileImage) : "ruta/a/imagen/por/defecto.png"} alt="" />
                         </div>
                             <h3 className={profileDetails.firstName === '' ? 'h3-div-1' : 'h3-div-1-data'}>{`${profileDetails.firstName} ${profileDetails.lastName}`}</h3>
                             <h5 className={profileDetails.email === '' ? 'h5-div-1' : 'h5-div-1-data'}>{profileDetails.email}</h5>

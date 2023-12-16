@@ -44,7 +44,20 @@
     overflow: hidden;
     margin-top: 10px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.113);
+     background-color: rgba(0, 0, 0, 0.113);
+}
+
+.div-img-perfil-data{
+    background-color: transparent;
+    width: 40%;
+    height: 120px;
+    border: 3px solid #5A4D9B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 50%;
 }
 
 .img-perfil{

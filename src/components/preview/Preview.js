@@ -2,6 +2,7 @@
 import "./Preview.css"
 import Celular from "../celular/Celular"
 import { useLinkContext } from '../../context/LinkProvider.js';
+import { Link } from 'react-router-dom'
 
 /***** LOGICA *****/
 
@@ -14,7 +15,7 @@ return (
 
     <section className="seccion-btn-preview">
       <div className="div-btn-preview">
-        <button className="btn-preview-1">Back to Editor</button>
+        <a className="btn-preview-1"><Link className="link-btn-preview" to={'/links'}>Back to Editor</Link></a>
         <button className="btn-preview-2">Share Link</button>
       </div>
     </section>

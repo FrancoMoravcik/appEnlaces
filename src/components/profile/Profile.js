@@ -6,20 +6,29 @@ import "./Profile.css";
 
 const Profile = () => {
 
-    const { linkSections , updateProfileDetails } = useLinkContext();
+    const { linkSections, updateProfileDetails, updateProfileImage } = useLinkContext();
 
     const handleProfileDetailsChange = (event) => {
         const { name, value } = event.target;
         updateProfileDetails((prevProfileDetails) => ({
-          ...prevProfileDetails,
-          [name]: value
+            ...prevProfileDetails,
+            [name]: value
         }));
+    };
+
+    const handleImageChange = (event) => {
+        const selectedImage = event.target.files[0];
+      
+        if (selectedImage) {
+          // Actualiza el contexto con la nueva imagen
+          updateProfileImage(selectedImage);
+        }
       };
 
     return (
         <main className='main-profile'>
             <section className='seccion-1-profile'>
-                <Celular linkSections={linkSections}/>
+                <Celular linkSections={linkSections} />
             </section>
 
             <section className="seccion-2-container-profile-details">
@@ -33,15 +42,14 @@ const Profile = () => {
                 <section className="seccion-details">
                     <div className='div-container-seccion-details'>
                         <div className="div-input-1-image">
-                            <p className="p-1">Foto de perfil</p>
+                            <p className="p-1">profile picture</p>
                         </div>
                         <div className="div-input-2-image">
                             <label className='label-image' htmlFor='image'>
                                 <FontAwesomeIcon className="icon-image" icon={faImage} />
                                 <p>Upload image</p>
                             </label>
-                            <input id='image' name="profilePicture" type='file'
-                            ></input>
+                            <input id='image' name="profilePicture" type='file' onChange={handleImageChange}></input>
                             <p className="p-2">image must be below 1024X1024px. Use format PNG, JPG o BMP.</p>
                         </div>
                     </div>
@@ -57,7 +65,7 @@ const Profile = () => {
                         </div>
                         <div className="div-form">
                             <label className="label-div-form">Last Name</label>
-                            <input type='text'name="lastName"    onChange={handleProfileDetailsChange}
+                            <input type='text' name="lastName" onChange={handleProfileDetailsChange}
                             ></input>
                         </div>
                         <div className="div-form">
@@ -67,7 +75,7 @@ const Profile = () => {
                             ></input>
                         </div>
 
-                        <button className="btn-save-div-form">Guardar</button>
+                        <button className="btn-save-div-form">Save</button>
                     </form>
                 </section>
             </section>
