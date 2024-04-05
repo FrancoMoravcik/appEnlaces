@@ -59,7 +59,7 @@ const Links = () => {
                         <section key={linkSection.id} className="seccion-form">
                             <div className="div-1-form">
                                 <h3 className="h3-form">
-                                    <img className="imgLinks" src="img/lineas.png" alt=""></img>
+                                    <img className="imgLinks" src="img/lineas.png" alt="links"></img>
                                     Link <span> #{linkSection.id}</span>
                                 </h3>
                                 <button className="button-form" onClick={() => handleRemoveLinkSection(linkSection.id)}>Remove</button>
