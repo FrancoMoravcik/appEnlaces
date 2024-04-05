@@ -27,6 +27,7 @@
     font-weight: 400;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
 }
 
 .link-btn-preview{

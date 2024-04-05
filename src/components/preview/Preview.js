@@ -15,7 +15,7 @@ return (
 
     <section className="seccion-btn-preview">
       <div className="div-btn-preview">
-        <a className="btn-preview-1"><Link className="link-btn-preview" to={'/links'}>Back to Editor</Link></a>
+        <Link className="btn-preview-1" to={'/links'}>Back to Editor</Link>
         <button className="btn-preview-2">Share Link</button>
       </div>
     </section>

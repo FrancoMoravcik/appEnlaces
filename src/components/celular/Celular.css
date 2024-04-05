@@ -35,8 +35,8 @@
 }
 
 .div-img-perfil{
-    width: 40%;
-    height: 120px;
+    width: 50%;
+    height: 125px;
     border: 3px solid #5A4D9B;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
 .div-img-perfil-data{
     background-color: transparent;
     width: 40%;
-    height: 120px;
+    height: 125px;
     border: 3px solid #5A4D9B;
     display: flex;
     justify-content: center;

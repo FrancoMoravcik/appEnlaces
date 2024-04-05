@@ -18,7 +18,7 @@ return (
 
             <li><Link className="li" to='/profile'><span className='spanIcono spanIcono3'><FontAwesomeIcon icon={faUser} /></span><span className='spanPalabra spanPalabra3'>Profile Details</span></Link></li>
 
-            <li><Link className="li li4" to='/preview'><span className='spanIcono spanIcono4'><img className="imgLogo2" src="img/ojo.png"aria-valuetext="logo"></img></span><span className='spanPalabra spanPalabra4'>Preview</span></Link></li>
+            <li><Link className="li li4" to='/preview'><span className='spanIcono spanIcono4'><img className="imgLogo2" alt="" src="img/ojo.png"aria-valuetext="logo"></img></span><span className='spanPalabra spanPalabra4'>Preview</span></Link></li>
         </ul>
     </nav>
 )
